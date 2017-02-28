@@ -34,21 +34,21 @@ Django Projects
 ---------------
 COMMON COMMANDS: python manage.py ___________
 
-	Running Project
-	---------------
-	1.To run the project, go INTO the "snake_pit" folder
-	2.You must first kick up the server by typing into the cmd line: python manage.py runserver
-	3. This should output something like this:
+Running Project
+---------------
+1.To run the project, go INTO the "snake_pit" folder
+2.You must first kick up the server by typing into the cmd line: python manage.py runserver
+3. This should output something like this:
 
-		System check identified no issues (0 silenced).
-		February 28, 2017 - 08:02:50
-		Django version 1.10.5, using settings 'snake_pit.settings'
-		Starting development server at http://127.0.0.1:8000/
-		Quit the server with CTRL-BREAK.
+	System check identified no issues (0 silenced).
+	February 28, 2017 - 08:02:50
+	Django version 1.10.5, using settings 'snake_pit.settings'
+	Starting development server at http://127.0.0.1:8000/
+	Quit the server with CTRL-BREAK.
 
-	4. You can now go to your web browser and type into the URL: localhost:(port number)
+4. You can now go to your web browser and type into the URL: localhost:(port number)
 
-		//port number can be found on the line "Starting development server at http://?.?.?.?:(port number)/"
-		//alternitively you can type this into the cmd line: python manage.py runserver 0.0.0.0:8000 
-		//which will set the server port to be 8000 automatically. 
+	//port number can be found on the line "Starting development server at http://?.?.?.?:(port number)/"
+	//alternitively you can type this into the cmd line: python manage.py runserver 0.0.0.0:8000 
+	//which will set the server port to be 8000 automatically. 
 
