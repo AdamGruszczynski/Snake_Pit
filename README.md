@@ -37,7 +37,9 @@ COMMON COMMANDS: python manage.py ___________
 Running Project
 ---------------
 1.To run the project, go INTO the "snake_pit" folder
+
 2.You must first kick up the server by typing into the cmd line: python manage.py runserver
+
 3. This should output something like this:
 
 	System check identified no issues (0 silenced).
