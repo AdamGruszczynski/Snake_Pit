@@ -7,6 +7,7 @@ Installing Python and Pip
 -------------------------
 /* Pip is used to easily install Django onto your machine. 
 get-pip.py file located in our repo in the folder named "Pip Install". */
+
 If you are using Windows:
 	Please refer to this link: https://github.com/BurntSushi/nfldb/wiki/Python-&-pip-Windows-installation
 	
@@ -40,7 +41,7 @@ Running Project
 
 2.You must first kick up the server by typing into the cmd line: python manage.py runserver
 
-3. This should output something like this:
+3.This should output something like this
 
 	System check identified no issues (0 silenced).
 	February 28, 2017 - 08:02:50
@@ -48,7 +49,7 @@ Running Project
 	Starting development server at http://127.0.0.1:8000/
 	Quit the server with CTRL-BREAK.
 
-4. You can now go to your web browser and type into the URL: localhost:(port number)
+4.You can now go to your web browser and type into the URL: localhost:(port number)
 
 	//port number can be found on the line "Starting development server at http://?.?.?.?:(port number)/"
 	//alternitively you can type this into the cmd line: python manage.py runserver 0.0.0.0:8000 
