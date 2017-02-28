@@ -1,3 +1,6 @@
+PLEASE PULL LASTEST CODE BEFORE PUSH
+====================================
+
 Requirements to Run Project
 ---------------------------
 1.Python installed
