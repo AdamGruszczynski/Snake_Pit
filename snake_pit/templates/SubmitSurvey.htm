@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+        header, footer {
+            padding: 1em;
+            color: white;
+            background-color: black;
+            clear: left;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #4CAF50;
+        }
+        article {
+            margin-left: 170px;
+            border-left: 1px solid gray;
+            padding: 1em;
+            overflow: hidden;
+        }
+
+        .inputSearch {
+            width: 200px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 2px;
+            font-size: 12px;
+            background-color: white;
+            background-image: url('searchicon.png');
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 140px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+        }
+
+        .inputForm {
+            width: 100%;
+        }
+    </style>
+    <title>SnakePit-CreateSurvey</title>
+        <link href="./SubmitSurvey_files/bootstrap3.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./SubmitSurvey_files/font-awesome.min4.css">
+        <link href="./SubmitSurvey_files/hover-min.css" rel="stylesheet">
+        <link href="./SubmitSurvey_files/style.css" rel="stylesheet">
+        <link href="./SubmitSurvey_files/blocks.css" rel="stylesheet">
+        <link href="./SubmitSurvey_files/default1.css" rel="stylesheet">
+        <style type="text/css" data="Page Custom CSS"></style>
+        </head>
+    <body>
+        <div id="header-wrapper">
+    <div id="header">
+        <!-- Banner -->
+        <section id="banner">
+            <header>
+                <h2>Snake Pit</h2>
+            </header>
+        </section>
+
+
+        <!-- Nav -->
+        <nav id="nav">
+        <ul>
+                <li><a href="#">About Us</a><li/>
+                <li><a href="#">Help/FAQ</a><li/>
+                <li><a href="#">Adv.Filter</a> <li/>
+                <li><a href="#">Create Survey</a> <li/>
+                <li><a href="#">Take Survey</a> <li/>
+            <form>
+                <input type="text" name="search" placeholder="Search.." class="inputSearch">
+            </form>
+            <li style="float:right"><a href="#about">SignIn/Out</a></li>
+            <li style="float:right"><a href="#hellouser">Hello User! </a></li>
+
+
+        </ul>
+        </nav>
+    </div>
+</div>
+        <div id="windowDiv">
+            <div id="MarginsTop" style="height: 0px;" class="row"></div>
+            <div id="bodyContainer" style="width:100%">
+                <div class="simblaEL containerHolder" data-drag="P0" id="P0" style="position: relative;">
+                    <div class="container-fluid" data-border-type="All" style="border-radius: 0px; padding-bottom: 70px; padding-top: 20px;">
+                        <div class="simblaEL containerHolder" data-drag="P2" id="P2">
+                            <div class="container">
+                                        <p align="right">
+                                        <button type="submit" class="simblaEL btn btn-lg" data-drag="P97" id="P97">CREATE NEW SURVEY</button>
+                                        </p>
+                                        <div class="simblaEL tcH" data-drag="P6" id="P6">
+                                            <div class="textContainer H2" style="cursor: text;">
+                                                <h2>
+                                                    <div style="text-align: center;">
+                                                        <span style="color: rgb(255, 255, 255); font-size: 24px; line-height: 1.1;"></span>
+                                                    </div>
+                                                </h2>
+                                            </div>
+                                        </div>
+                                        <div class="simblaEL tcH" data-drag="P8" id="P8">
+                                            <div class="textContainer H3" style="cursor: text;">
+                                                <h3>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                <div class="row simblaEL rDivider" data-drag="P10" id="P10" style="position: relative; padding-bottom: 40px;">
+                                    <div class="sDivider col-md-3 index0" data-colsize="3">
+                                        <div class="row simblaEL rDivider" data-drag="P12" id="P12" style="position: relative; padding-bottom: 20px;">
+                                            <div class="sDivider col-md-12 index0" data-colsize="12"></div>
+                                        </div>
+                                        <div class="simblaEL simblaImg" data-drag="P14" id="P14" style="">
+                                            <img draggable="false" class="" alt="checked_318-140685.jpg" data-id="" title="checked_318-140685.jpg" data-border-type="All" style="border-radius: 150px;" width="100" src="./SubmitSurvey_files/24630-1omay4x.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="sDivider col-md-9 index1" data-colsize="9">
+                                        <div class="row simblaEL rDivider" data-drag="P16" id="P16">
+                                            <div class="sDivider col-md-10 index0" data-colsize="10">
+                                                <div class="simblaEL tcH" data-drag="P18" id="P18">
+                                                    <div class="textContainer H2" style="cursor: text;">
+                                                        <h2>
+                                                            <div style="text-align: left;">
+                                                                <span style="font-size: 22px; line-height: 1.1;">
+                                                                    <u>Submitted</u>
+                                                                    <button type="submit" class="simblaEL btn btn-lg" data-drag="P97" id="P97">>></button>
+                                                                </span>
+                                                            </div>
+                                                        </h2>
+                                                    </div>
+                                                </div>
+                                                <div class="simblaEL tc" data-drag="P20" id="P20">
+                                                    <div class="textContainer" style="cursor: text;">
+                                                        <p>MySurvey_5 - Time Left: (Countdown)</p>
+                                                        <p>MySurvey_6 - Time Left: (Countdown)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sDivider col-md-2 index1" data-colsize="2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row simblaEL rDivider" data-drag="P32" id="P32" style="position: relative; padding-bottom: 40px;">
+                                    <div class="sDivider col-md-3 index0" data-colsize="3">
+                                        <div class="row simblaEL rDivider" data-drag="P34" id="P34" style="position: relative; padding-bottom: 20px;">
+                                            <div class="sDivider col-md-12 index0" data-colsize="12"></div>
+                                        </div>
+                                        <div class="simblaEL simblaImg" data-drag="P36" id="P36" style="">
+                                            <img draggable="false" class="" alt="question-mark_318-52837.jpg" data-id="" title="question-mark_318-52837.jpg" data-border-type="All" style="border-radius: 150px;" width="100" src="./SubmitSurvey_files/24630-zqxosm.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="sDivider col-md-9 index1" data-colsize="9">
+                                        <div class="row simblaEL rDivider" data-drag="P38" id="P38">
+                                            <div class="sDivider col-md-11 index0" data-colsize="11">
+                                                <div class="simblaEL tcH" data-drag="P40" id="P40">
+                                                    <div class="textContainer H2" style="cursor: text;">
+                                                        <h2>
+                                                            <div style="text-align: left;">
+                                                                <u>Unsaved</u>
+                                                                <button type="submit" class="simblaEL btn btn-lg" data-drag="P97" id="P97">>></button>
+                                                            </div>
+                                                        </h2>
+                                                    </div>
+                                                </div>
+                                                <div class="simblaEL tc" data-drag="P42" id="P42">
+                                                    <div class="textContainer" style="cursor: text;">
+                                                        <p>MySurvey_7 - Status: Incomplete</p>
+                                                        <p>MySurvey_8 - Status: Incomplete</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sDivider col-md-1 index1" data-colsize="1"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row simblaEL rDivider" data-drag="P54" id="P54" style="position: relative; padding-bottom: 40px;">
+                                    <div class="sDivider col-md-3 index0" data-colsize="3">
+                                        <div class="row simblaEL rDivider" data-drag="P56" id="P56" style="position: relative; padding-bottom: 20px;">
+                                            <div class="sDivider col-md-12 index0" data-colsize="12"></div>
+                                        </div>
+                                        <div class="simblaEL simblaImg" data-drag="P98" id="P98">
+                                            <img draggable="false" class="" alt="" data-id="" title="" src="./SubmitSurvey_files/24630-33hmp3.jpg" width="100">
+                                        </div>
+                                    </div>
+                                    <div class="sDivider col-md-9 index1" data-colsize="9">
+                                        <div class="row simblaEL rDivider" data-drag="P60" id="P60">
+                                            <div class="sDivider col-md-11 index0" data-colsize="11">
+                                                <div class="simblaEL tcH" data-drag="P62" id="P62">
+                                                    <div class="textContainer H2" style="cursor: text;">
+                                                        <h2>
+                                                            <div style="text-align: left;">
+                                                                <u>Completed</u>
+                                                                <button type="submit" class="simblaEL btn btn-lg" data-drag="P97" id="P97">>></button>
+                                                            </div>
+                                                        </h2>
+                                                    </div>
+                                                </div>
+                                                <div class="simblaEL tc" data-drag="P64" id="P64">
+                                                    <div class="textContainer" style="cursor: text;">
+                                                        <p>MySurvey_1 - Completed: (Date&amp;Time)</p>
+                                                        <p>MySurvey_2 - Completed: (Date&amp;Time)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sDivider col-md-1 index1" data-colsize="1"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
