@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+        header, footer {
+            padding: 1em;
+            color: white;
+            background-color: black;
+            clear: left;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #4CAF50;
+        }
+        article {
+            margin-left: 170px;
+            border-left: 1px solid gray;
+            padding: 1em;
+            overflow: hidden;
+        }
+
+        input[type=text] {
+            width: 200px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 2px;
+            font-size: 12px;
+            background-color: white;
+            background-image: url('searchicon.png');
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 140px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+        }
+
+        input[type=text]:focus {
+            width: 100%;
+        }
+    </style>
+    <title>SnakePit-CreateSurvey</title>
+
+</head>
+
+<body>
+<!-- Header -->
+<div id="header-wrapper">
+    <div id="header">
+
+        <!-- Logo -->
+        <h1><a href="hh.html">Snake Pit</a></h1>
+
+
+        <!-- Banner -->
+        <section id="banner">
+            <header>
+                <h2>Banner</h2>
+            </header>
+        </section>
+
+
+        <!-- Nav -->
+        <nav id="nav">
+        <ul>
+                <li><a href="#">About Us</a><li/>
+                <li><a href="#">Help/FAQ</a><li/>
+                <li><a href="#">Adv.Filter</a> <li/>
+            <form>
+                <input type="text" name="search" placeholder="Search..">
+            </form>
+            <li style="float:right"><a href="#about">SignIn/Out</a></li>
+            <li style="float:right"><a href="#hellouser">Hello User! </a></li>
+
+
+        </ul>
+        </nav>
+    </div>
+</div>
+
+<!-- Main -->
+
+<p>Name:</p>
+    <textarea rows="2" cols="20">
+    medicine test survey
+    </textarea>
+
+<p>Access:</p>
+<form action="">
+    <input type="radio" name="Access" value="public"> Public<br>
+    <input type="radio" name="Access" value="private"> Private<br>
+
+</form>
+
+<p>Scope:</p>
+
+<form action="">
+    <input type="radio" name="Scope" value="gengeral"> General<br>
+    <input type="radio" name="Scope" value="specific"> Specific<br>
+
+</form>
+
+<p>Description:</p>
+    <textarea rows="5" cols="20">
+    medicine test survey
+    </textarea>
+
+<p>Statements:</p>
+    <textarea rows="3" cols="20">
+    Statement 1
+    </textarea>
+    <textarea rows="3" cols="20">
+    Statement 2
+    </textarea>
+    <textarea rows="3" cols="20">
+    Statement 3
+    </textarea>
+
+<button type="button">ADD+</button>
+
+
+
+
+
+
+
+
+<footer>
+                <ul class="actions">
+                    <li><a href="#" class="button big">Save</a></li>
+                    <li><a href="#" class="button alt big">Cancel</a></li>
+                    <li><a href="#" class="button alt big">Submit</a></li>
+                </ul>
+            </footer>
+    </body>
+</html>
