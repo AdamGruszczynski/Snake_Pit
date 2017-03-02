@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+
+{% block title %}Snake Pit | Taking Survey{% endblock title %}
+
+{% block content %}
+<!-- Main -->
+
+<p>Name:</p>
+    <textarea rows="2" cols="20">
+    medicine test survey
+    </textarea>
+
+<p>Access:</p>
+<form action="">
+    <input type="radio" name="Access" value="public"> Public<br>
+    <input type="radio" name="Access" value="private"> Private<br>
+
+</form>
+
+<p>Scope:</p>
+
+<form action="">
+    <input type="radio" name="Scope" value="gengeral"> General<br>
+    <input type="radio" name="Scope" value="specific"> Specific<br>
+
+</form>
+
+<p>Description:</p>
+    <textarea rows="5" cols="20">
+    medicine test survey
+    </textarea>
+
+<p>Statements:</p>
+    <textarea rows="3" cols="20">
+    Statement 1
+    </textarea>
+    <textarea rows="3" cols="20">
+    Statement 2
+    </textarea>
+    <textarea rows="3" cols="20">
+    Statement 3
+    </textarea>
+
+<button type="button">ADD+</button>
+
+
+
+
+
+
+
+
+<footer>
+                <ul class="actions">
+                    <li><a href="#" class="button big">Save</a></li>
+                    <li><a href="#" class="button alt big">Cancel</a></li>
+                    <li><a href="#" class="button alt big">Submit</a></li>
+                </ul>
+            </footer>
+    </body>
+</html>
+{% endblock content %}

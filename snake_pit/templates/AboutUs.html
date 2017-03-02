@@ -1,106 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "layout.html" %}
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        header, footer {
-            padding: 1em;
-            color: white;
-            background-color: #857F7E;
-            clear: left;
-            text-align: center;
-        }
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #333;
-        }
-        li {
-            float: left;
-        }
-        li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-        li a:hover:not(.active) {
-            background-color: #857F7E;
-        }
-        .active {
-            background-color: #4CAF50;
-        }
-        article {
-            margin-left: 170px;
-            border-left: 1px solid gray;
-            padding: 1em;
-            overflow: hidden;
-        }
-        input[type=text] {
-            width: 400px;
-            box-sizing: border-box;
-            border: 0px solid #ccc;
-            border-radius: 4px;
-            font-size: 16px;
-            background-color: #CDCBCA;
-            background-image: url('searchicon.png');
-            background-position: 10px 10px;
-            background-repeat: no-repeat;
-            padding: 12px 20px 12px 140px;
-            -webkit-transition: width 0.4s ease-in-out;
-            transition: width 0.4s ease-in-out;
-        }
-        input[type=text]:focus {
-            width: 100%;
-        }
-    </style>
-    <title>SnakePit-About Us</title>
+{% block title %} Snake Pit | About Us{% endblock title %}
 
-</head>
-
-<body>
-<!-- Header -->
-<div id="header-wrapper">
-    <div id="header">
-
-
-        <!-- Banner -->
-        <section id="banner">
-            <header>
-                <h1><a href="hh.html">Snake Pit</a></h1>
-
-            </header>
-        </section>
-
-
-        <!-- Nav -->
-        <nav id="nav">
-        <ul>
-                <li><a href="#">About Us</a><li/>
-                <li><a href="#">Help/FAQ</a><li/>
-                <li><a href="#">Adv.Filter</a> <li/>
-            <form>
-                <input type="text" name="search" placeholder="Search..">
-            </form>
-            <li style="float:right"><a href="#about">Hello, User</a></li>
-            <li style="float:right"><a href="#hellouser">Find Survey </a></li>
-
-
-        </ul>
-        </nav>
-    </div>
-</div>
-<br>
+{% block content %}
+    
 
 <!-- ##Team Picture and About the project## -->
 
-    <center><img src="DePaul.jpeg" alt="Team Picture" style="width:300px;height:300px;"></center>
+    <center><img src="./assets/media/DePaulLogo.png" alt="Team Picture" style="width:300px;height:300px;"></center>
 
         <center><h1>Aboust Us</h1></center>
 
@@ -114,23 +21,13 @@
         <center><h2><u>Algorithms</u></h2><h3>Head: Jonatho Gonzalez</h3><h3>Jacob Gasyna</h3></center>
         <br>
 
-            <center><h2><u>Back End</u></h2><h3>Keaton Zonca</h3></center>
-            <br>
+        <center><h2><u>Back End</u></h2><h3>Keaton Zonca</h3></center>
+        <br>
             
-                <center><h2><u>Front End</u></h2><h3>Head: David Keller</h3><h3>Wenchi "Evan" Sun</h3><h3>Aakif Khan</h3></center>
+        <center><h2><u>Front End</u></h2><h3>Head: David Keller</h3><h3>Wenchi "Evan" Sun</h3><h3>Aakif Khan</h3></center>
 
 
-
-
-
-
-
-
-
-   
-</body>
-</html>
-
+{% endblock content %}
 
 
 

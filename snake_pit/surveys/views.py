@@ -1,3 +1,14 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+def find_survey_page(request):
+	return render(request, 'Find_Survey.html')
+
+def take_survey_page(request):
+	return render(request, 'TakeASurvey.html')
+
+def my_survey_page(request):
+	return render(request, 'MySurveys.html')
+
+def create_survey_page(request):
+	return render(request, 'Create_Survey.html')

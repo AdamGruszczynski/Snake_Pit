@@ -1,119 +1,9 @@
-<!DOCTYPE html>
-<!-- saved from url=(0068)file:///Users/davidkeller/Desktop/HTML_soFar/Edit:Create_Profile.htm -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        
-        
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
+{% extends "layout.html" %}
 
-        header, footer {
-            padding: 1em;
-            color: white;
-            background-color: black;
-            clear: left;
-            text-align: center;
-        }
+{% block title %} Snake Pit | Edit Profile{% endblock title %}
 
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #333;
-        }
-
-        li {
-            float: left;
-        }
-
-        li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        li a:hover:not(.active) {
-            background-color: #111;
-        }
-
-        .active {
-            background-color: #4CAF50;
-        }
-        article {
-            margin-left: 170px;
-            border-left: 1px solid gray;
-            padding: 1em;
-            overflow: hidden;
-        }
-
-        .inputSearch {
-            width: 200px;
-            box-sizing: border-box;
-            border: 1px solid #ccc;
-            border-radius: 2px;
-            font-size: 12px;
-            background-color: white;
-            background-image: url('searchicon.png');
-            background-position: 10px 10px;
-            background-repeat: no-repeat;
-            padding: 12px 20px 12px 140px;
-            -webkit-transition: width 0.4s ease-in-out;
-            transition: width 0.4s ease-in-out;
-        }
-
-        .inputForm {
-            width: 100%;
-        }
-    </style>
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script type="text/javascript" async="" src="./Edit_Create_Profile_files/recaptcha__en.js"></script>
-        <link href="./Edit_Create_Profile_files/bootstrap3.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="./Edit_Create_Profile_files/font-awesome.min4.css">
-        <link href="./Edit_Create_Profile_files/hover-min.css" rel="stylesheet">
-        <link href="./Edit_Create_Profile_files/style.css" rel="stylesheet">
-        <link href="./Edit_Create_Profile_files/blocks.css" rel="stylesheet">
-        <link href="./Edit_Create_Profile_files/default1.css" rel="stylesheet">
-        <style type="text/css" data="Page Custom CSS"></style>
-        <script src="./Edit_Create_Profile_files/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-        <script> if (!window.jQuery) {  document.write('<script src="//d33rxv6e3thba6.cloudfront.net/asset/sites/js/jquery.js"></scr' + 'ipt>'); }</script><script src="file://d33rxv6e3thba6.cloudfront.net/asset/sites/js/jquery.js"></script>
-        <meta name="page-source" site="//sites.simbla.com/0552a3e0-2694-832c-3777-69b399f39f26" page="survey_action" site-id="58b5166467e738065f3fbb74" page-id="58b51672519444025f6ddf92" master-page-id="">
-        <link rel="canonical" href="http://sites.simbla.com/0552a3e0-2694-832c-3777-69b399f39f26/">
-    </head>
-    <body data-spy="scroll" data-target=".navbar-collapse" class="static-page">
-        <div id="header-wrapper">
-            <div id="header">
-            <!-- Banner -->
-            <section id="banner">
-            <header>
-                <h2>Snake Pit</h2>
-            </header>
-            </section>
-
-
-            <!-- Nav -->
-            <nav id="nav">
-            <ul>
-                <li><a href="file:///Users/davidkeller/Desktop/HTML_soFar/Edit:Create_Profile.htm#">About Us</a></li><li>
-                </li><li><a href="file:///Users/davidkeller/Desktop/HTML_soFar/Edit:Create_Profile.htm#">Help/FAQ</a></li><li>
-                </li><li><a href="file:///Users/davidkeller/Desktop/HTML_soFar/Edit:Create_Profile.htm#">Adv.Filter</a> </li><li>
-                </li><li><a href="file:///Users/davidkeller/Desktop/HTML_soFar/Edit:Create_Profile.htm#">Create Survey</a> </li><li>
-                </li><li><a href="file:///Users/davidkeller/Desktop/HTML_soFar/Edit:Create_Profile.htm#">Take Survey</a> </li><li>
-            <form>
-                <input type="text" name="search" placeholder="Search.." class="inputSearch">
-            </form>
-            </li><li style="float:right"><a href="file:///Users/davidkeller/Desktop/HTML_soFar/Edit:Create_Profile.htm#about">SignIn/Out</a></li>
-            <li style="float:right"><a href="file:///Users/davidkeller/Desktop/HTML_soFar/Edit:Create_Profile.htm#hellouser">Hello User! </a></li>
-
-
-            </ul>
-            </nav>
-            </div>
-        </div>
-        <div id="windowDiv" style="height: 732px;">
+{% block content %}
+    <div id="windowDiv" style="height: 732px;">
             <div id="MarginsTop" style="height: 0px;" class="row"></div>
             <div id="bodyContainer" style="width:100%">
                 <div class="container simblaBlock content2" data-border-type="All" style="border-radius: 0px; width: 100%; padding-top: 0px;" id="P0" data-drag="P0" ondragstart="return top.dragStart(event,&quot;fromPage&quot;)">
@@ -216,6 +106,5 @@
                     </div>
                 </div>
             </div>
-        </div>
-    
-</body></html>
+        </div>}
+{% endblock content %}

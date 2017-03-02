@@ -1,0 +1,106 @@
+{% extends "layout.html" %}
+{% block title %} Snake Pit | Profile Page {% endblock title %}
+
+{% block content %}
+    <div id="windowDiv" style="height: 732px;">
+        <div id="MarginsTop" style="height: 0px;" class="row"></div>
+        <div id="bodyContainer" style="width:100%">
+            <div class="container simblaBlock content2" data-border-type="All" style="border-radius: 0px; width: 100%; padding-top: 0px;" id="P0" data-drag="P0" ondragstart="return top.dragStart(event,&quot;fromPage&quot;)">
+                <a class="simblaEL anchorElm" data-drag="divCounter" name="Content0" id="Content0" data-id="58b700446207ef25283f1b36"></a>
+                <div class="simblaEL containerHolder" data-drag="P2" id="P2" style="position: relative;">
+                    <div class="container" style="margin-top: 0px; margin-bottom: 100px;">
+                        <div class="simblaEL tcH" data-drag="P4" id="P4"></div>
+                        <div class="simblaEL tcH" data-drag="P6" id="P6">
+                            <div class="textContainer H1" style="cursor: text;">
+                                <h1 style="text-align: center;">User Profile&nbsp;</h1>
+                            </div>
+                        </div>
+                        <div class="simblaEL tcH" data-drag="P8" id="P8">
+                            <div class="textContainer H3" style="cursor: text;">
+                                <h3 style="text-align: center;"></h3></div>
+                        </div>
+                        <div class="simblaEL tc" data-drag="P10" id="P10"></div>
+                        <div class="simblaEL tc" data-drag="P12" id="P12"></div>
+                        <div class="row simblaEL rDivider" data-drag="P14" id="P14" style="padding: 0px; margin-top: 65px; margin-right: 0px; margin-bottom: 0px;" data-title="Row">
+                            <div class="sDivider col-md-8 index0" data-colsize="8" data-title="Column">
+                                <form class="simblaEL" data-drag="P75" onsubmit="return simblaFormSubmit(this)" method="POST" id="P75" data-title="Form" name="" data-failure="" data-failure-type="text" data-success="" data-success-type="text">
+                                    <div class="simblaEL tcH" data-drag="P90" id="P90">
+                                        <div class="textContainer H4" style="cursor: text;">
+                                            <h4>Username:</h4>
+                                        </div>
+                                    </div>
+                                    <div class="simblaEL tc" data-drag="P91" id="P91">
+                                        <div class="textContainer" style="cursor: text;">
+                                            <p>ThisUser123</p>
+                                        </div>
+                                    </div>
+                                    <div class="simblaEL tcH" data-drag="P92" id="P92">
+                                        <div class="textContainer H4" style="cursor: text;">
+                                            <h4>Email:</h4>
+                                        </div>
+                                    </div>
+                                    <div class="simblaEL tc" data-drag="P93" id="P93">
+                                        <div class="textContainer" style="cursor: text;">
+                                            <p>User123@gmail.com</p>
+                                        </div>
+                                    </div>
+                                    <div class="simblaEL tcH" data-drag="P94" id="P94">
+                                        <div class="textContainer H4" style="cursor: text;">
+                                            <h4>Age:</h4>
+                                        </div>
+                                    </div>
+                                    <div class="simblaEL tc" data-drag="P95" id="P95">
+                                        <div class="textContainer" style="cursor: text;">
+                                            <p>24</p>
+                                        </div>
+                                    </div>
+                                    <div class="simblaEL tcH" data-drag="P96" id="P96">
+                                        <div class="textContainer H4" style="cursor: text;">
+                                            <h4>Ethnicity:</h4>
+                                        </div>
+                                    </div>
+                                    <div class="simblaEL tc" data-drag="P97" id="P97">
+                                        <div class="textContainer" style="cursor: text;">
+                                            <p>White</p>
+                                        </div>
+                                    </div>
+                                    <div class="simblaEL tcH" data-drag="P98" id="P98">
+                                        <div class="textContainer H4" style="cursor: text;">
+                                            <h4>Gender:</h4>
+                                        </div>
+                                    </div>
+                                    <div class="simblaEL tc" data-drag="P99" id="P99">
+                                        <div class="textContainer" style="cursor: text;">
+                                            <p>Male</p>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="simblaEL btn" data-drag="P100" id="P100">
+                                        <a href="{% url 'users:edit' %}">EDIT</a>
+                                    </button>
+                                </form>
+                                <div class="simblaEL tcH" data-drag="P20" id="P20"></div>
+                                <div class="simblaEL tcH" data-drag="P24" id="P24"></div>
+                                <div class="simblaEL tc" data-drag="P26" id="P26" style="position: relative;"></div>
+                            </div>
+                            <div class="sDivider col-md-4 index1" data-colsize="4" data-title="Column">
+                                <div class="simblaEL simblaImg" data-drag="P88" id="P88">
+                                    <img draggable="false" class="" src="./Profile_Page_files/28193-1i2tfeb.jpg" alt="" data-id="57179087180c7d216e7e5777" title="">
+                                </div>
+                                <div class="simblaEL tcH" data-drag="P89" id="P89">
+                                    <div class="textContainer H2" style="cursor: text;">
+                                        <h2>
+                                            <div style="text-align: center;">Profile Picture</div>
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div class="simblaEL tcH" data-drag="P32" id="P32"></div>
+                                <div class="simblaEL tcH" data-drag="P34" id="P34"></div>
+                                <div class="simblaEL tc" data-drag="P38" id="P38" style="position: relative;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

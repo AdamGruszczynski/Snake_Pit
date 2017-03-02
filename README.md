@@ -31,7 +31,8 @@ Installing Django
 -----------------
 /* REQUIRED: pip installed */
 
-Type into cmd line: pip install django 
+Type into cmd line: pip install django==1.9.9 
+Install 1.9.9 as the project will not compile properly if you get a version later than 1.7  
 You can check to see if you have it installed by typing this into the cmd line: django-admin.py version
 
 Django Projects

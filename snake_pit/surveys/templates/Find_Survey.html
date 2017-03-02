@@ -1,111 +1,8 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
+{% extends "layout.html" %}
 
-        header, footer {
-            padding: 1em;
-            color: white;
-            background-color: black;
-            clear: left;
-            text-align: center;
-        }
+{% block title %}Snake Pit | Survey List{% endblock title %}
 
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #333;
-        }
-
-        li {
-            float: left;
-        }
-
-        li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        li a:hover:not(.active) {
-            background-color: #111;
-        }
-
-        .active {
-            background-color: #4CAF50;
-        }
-        article {
-            margin-left: 170px;
-            border-left: 1px solid gray;
-            padding: 1em;
-            overflow: hidden;
-        }
-
-        .inputSearch {
-            width: 200px;
-            box-sizing: border-box;
-            border: 1px solid #ccc;
-            border-radius: 2px;
-            font-size: 12px;
-            background-color: white;
-            background-image: url('searchicon.png');
-            background-position: 10px 10px;
-            background-repeat: no-repeat;
-            padding: 12px 20px 12px 140px;
-            -webkit-transition: width 0.4s ease-in-out;
-            transition: width 0.4s ease-in-out;
-        }
-
-        .inputForm {
-            width: 100%;
-        }
-    </style>
-    <title>SnakePit-CreateSurvey</title>
-        <link href="./SubmitSurvey_files/bootstrap3.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="./SubmitSurvey_files/font-awesome.min4.css">
-        <link href="./SubmitSurvey_files/hover-min.css" rel="stylesheet">
-        <link href="./SubmitSurvey_files/style.css" rel="stylesheet">
-        <link href="./SubmitSurvey_files/blocks.css" rel="stylesheet">
-        <link href="./SubmitSurvey_files/default1.css" rel="stylesheet">
-        <style type="text/css" data="Page Custom CSS"></style>
-        </head>
-    <body data-spy="scroll" data-target=".navbar-collapse" class="static-page">
-        <div id="header-wrapper">
-            <div id="header">
-            <!-- Banner -->
-            <section id="banner">
-            <header>
-                <h2>Snake Pit</h2>
-            </header>
-            </section>
-
-
-            <!-- Nav -->
-            <nav id="nav">
-            <ul>
-                <li><a href="#">About Us</a><li/>
-                <li><a href="#">Help/FAQ</a><li/>
-                <li><a href="#">Adv.Filter</a> <li/>
-                <li><a href="#">Create Survey</a> <li/>
-                <li><a href="/Users/davidkeller/Desktop/SnakePit_WebPages/Take_Survey.htm">Take Survey</a> <li/>
-            <form>
-                <input type="text" name="search" placeholder="Search.." class="inputSearch">
-            </form>
-            <li style="float:right"><a href="#">SignIn/Out</a></li>
-            <li style="float:right"><a href="/Users/davidkeller/Desktop/SnakePit_WebPages/Profile_Page.htm">Profile</a></li>
-
-
-        </ul>
-        </nav>
-    </div>
-</div>
+{% block content %}
         <h2 align="center">Select a Survey Category</h2>
         <div id="windowDiv">
             <div id="MarginsTop" style="height: 0px;" class="row"></div>
@@ -145,7 +42,7 @@
                                         </div>
                                         <div class="row simblaEL rDivider" data-drag="P22" id="P22" style="position: relative; padding-left: 0px; padding-top: 20px; padding-bottom: 30px;">
                                             <div class="sDivider col-md-1 index0" data-colsize="1">
-                                                <a href="/Users/davidkeller/Desktop/SnakePit_WebPages/Survey_Action.htm">
+                                                <a href="{% url 'surveys:take' %}">
                                                 <button type="submit" class="simblaEL btn" data-drag="P97" id="P97">PROCEED</button>
                                                 </a>
                                             </div>
@@ -182,6 +79,7 @@
                                         </div>
                                         <div class="row simblaEL rDivider" data-drag="P44" id="P44" style="position: relative; padding-left: 0px; padding-top: 20px; padding-bottom: 30px;">
                                             <div class="sDivider col-md-1 index0" data-colsize="1">
+                                                <a href="{% url 'surveys:take' %}">
                                                 <button type="submit" class="simblaEL btn" data-drag="P98" id="P98">PROCEED</button>
                                             </div>
                                             <div class="sDivider col-md-1 index1" data-colsize="1"></div>
@@ -215,6 +113,7 @@
                                         </div>
                                         <div class="row simblaEL rDivider" data-drag="P66" id="P66" style="position: relative; padding-left: 0px; padding-top: 20px; padding-bottom: 30px;">
                                             <div class="sDivider col-md-1 index0" data-colsize="1">
+
                                                 <button type="submit" class="simblaEL btn" data-drag="P99" id="P99">PROCEED</button>
                                             </div>
                                             <div class="sDivider col-md-1 index1" data-colsize="1"></div>
@@ -227,5 +126,4 @@
                 </div>
             </div>
         </div>
-    </body>
-</html>
+{% endblock content %}

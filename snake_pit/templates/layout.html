@@ -1,0 +1,43 @@
+{% load static from staticfiles %}
+<!doctype html>
+
+<head>
+	<title>{% block title %}{% endblock title %}</title>
+	<link rel="stylesheet" href="{% static 'css/layout.css' %}">
+
+</head>
+	<body
+        <div >
+            <div >
+            <!-- Banner -->
+            <section >
+            <header>
+            	<h2>
+                	<a href="{% url 'views.home_page' %}">Snake Pit</a>
+                </h2>
+            </header>
+            </section>
+
+
+            <!-- Nav -->
+            <nav >
+            <ul>
+                <li><a href="{% url 'views.about_us' %}">About Us</a></li><li>
+                </li><li><a href="{% url 'views.help_page' %}">Help</a></li><li>
+                </li><li><a href="{% url 'surveys:create' %}">Create Survey</a> </li><li>
+                </li><li><a href="{% url 'surveys:find' %}">Find Survey</a> </li><li>
+            <form >
+                <input type="text" name="search" placeholder="Search.." class="inputSearch">
+            </form>
+            </li><li style="float:right"><a href="#">SignIn/Out</a></li>
+            <li style="float:right"><a href="{% url 'users:profile' %}">Hello User! </a></li>
+            <li style="float:right"><a href="{% url 'surveys:myList' %}">My Surveys </a></li>
+
+
+            </ul>
+            </nav>
+            </div>
+        </div>
+    	{% block content %}{% endblock content %}
+  	</body>
+</html>

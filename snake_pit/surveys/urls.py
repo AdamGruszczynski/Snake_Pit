@@ -13,20 +13,21 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
-from django.conf.urls import include, url
-from django.contrib import admin
-from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+from django.conf.urls import url
 
 from . import views
 
 urlpatterns = [
-    url(r'^surveys/', include('surveys.urls', namespace='surveys')),
-	url(r'^users/', include('users.urls', namespace='users')),
-    url(r'^admin/', include(admin.site.urls)),
-    url(r'^aboutUs/', views.about_us,),
-    url(r'^help/', views.help_page, ),
-    url(r'^$', views.home_page),
+ 	
+ 	url(r'^createSurvey/', views.create_survey_page, name='create'),
+
+ 	url(r'^mySurveys/', views.my_survey_page, name='myList'),
+
+ 	url(r'^/take', views.take_survey_page, name='take'),
+ 	
+    url(r'^surveyList/', views.find_survey_page, name='find'),
+    
 ]
 
 
-urlpatterns += staticfiles_urlpatterns()
+
