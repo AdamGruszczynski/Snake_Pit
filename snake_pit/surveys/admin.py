@@ -1,3 +1,8 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Survey, Result, Pending
+
+admin.site.register(Survey)
+admin.site.register(Result)
+admin.site.register(Pending)
+
