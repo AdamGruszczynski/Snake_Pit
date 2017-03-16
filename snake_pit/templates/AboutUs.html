@@ -1,32 +1,97 @@
 {% extends "layout.html" %}
 
+{% load static from staticfiles %}
+
 {% block title %} Snake Pit | About Us{% endblock title %}
 
 {% block content %}
     
 
-<!-- ##Team Picture and About the project## -->
+<!-- Page Content -->
+<div class="container">
 
-    <center><img src="./assets/media/DePaulLogo.png" alt="Team Picture" style="width:300px;height:300px;"></center>
+    <!-- Introduction Row -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header" style="color: #1E1E28 ">About Us
+            </h1>
+            <p>A GUI that allows researchers to generate a survey that is capable of collecting and organizing responses from users. The program should allow the researcher to edit questions, the response data and submit it to a clustering algorithm that will provide results that are returned through the program.
+            </p>
+        </div>
+    </div>
 
-        <center><h1>Aboust Us</h1></center>
+    <!-- Team Members Row -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class="page-header">Our Team</h2>
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center" >
+            <img class="img-circle img-responsive img-center" src="{% static 'image/Photo-Adam_Gr.jpg' %}" height="150" width="150" alt="">
+            <h3>Adam
+                <small>Manager</small>
+            </h3>
+            <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center">
+            <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
+            <h3>Aakif
+                <small>Front End</small>
+            </h3>
+            <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center">
+            <img class="img-circle img-responsive img-center" src="{% static 'image/Photo-David.jpg' %}" height="300" width="300" alt="">
+            <h3>David
+                <small>Front End</small>
+            </h3>
+            <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center">
+            <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
+            <h3>Wenchi
+                <small>Front End</small>
+            </h3>
+            <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center">
+            <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
+            <h3>Jonathon
+                <small>Algorithm</small>
+            </h3>
+            <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center">
+            <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
+            <h3>Jacob
+                <small>Algorithm</small>
+            </h3>
+            <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
 
-             <p><center>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</center></p>
-
-<br>
-    <!-- ##Roles and Names## -->
-      <center><h2><u>Manager</u></h2><h3>Adam Gruszczynski</h3></center>
-      <br>
-
-        <center><h2><u>Algorithms</u></h2><h3>Head: Jonatho Gonzalez</h3><h3>Jacob Gasyna</h3></center>
-        <br>
-
-        <center><h2><u>Back End</u></h2><h3>Keaton Zonca</h3></center>
-        <br>
-            
-        <center><h2><u>Front End</u></h2><h3>Head: David Keller</h3><h3>Wenchi "Evan" Sun</h3><h3>Aakif Khan</h3></center>
+</body></html>
 
 
+<a href="#" data-toggle="modal" data-target="#login-modal">Login</a>
+
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog">
+        <div class="loginmodal-container">
+            <h1>Login to Your Account</h1><br>
+            <form>
+                <input type="text" name="user" placeholder="Username">
+                <input type="password" name="pass" placeholder="Password">
+                <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+            </form>
+
+            <div class="login-help">
+                <a href="#">Register</a> - <a href="#">Forgot Password</a>
+            </div>
+        </div>
+    </div>
 {% endblock content %}
 
 

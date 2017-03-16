@@ -1,9 +1,10 @@
+{% load static from staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
-    <link href="css/bootstrap3.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}">
+    <link href=" {% static 'css/bootstrap3.min.css' %}" rel="stylesheet">
 
     <!-- Website CSS style -->
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
@@ -146,7 +147,7 @@
                 </div>
 
                 <div class="form-group ">
-                    <button type="button" class="btn btn-primary btn-lg btn-block login-button">Register</button>
+                    <button type="button" class="btn btn-primary btn-lg btn-block login-button" onclick="location.href='{% url 'views.home_page' %}'">Register</button>
                 </div>
                 <div class="login-register">
                     <a href="index.php">Login</a>
@@ -156,6 +157,6 @@
     </div>
 </div>
 
-<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
 </body>
 </html>

@@ -18,6 +18,7 @@ from django.conf.urls import url
 from . import views
 
 urlpatterns = [
+	url(r'^login/register', views.login_register_page, name='register'),
  	url(r'^profile_page/edit', views.profile_edit_page, name='edit'),
     url(r'^profile_page/', views.profile_page, name='profile'),
 

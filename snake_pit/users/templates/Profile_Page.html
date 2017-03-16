@@ -1,4 +1,5 @@
 {% extends "layout.html" %}
+{% load static from staticfiles %}
 {% block title %} Snake Pit | Profile Page {% endblock title %}
 
 {% block content %}
@@ -74,7 +75,7 @@
                                             <p>Male</p>
                                         </div>
                                     </div>
-                                    <button type="submit" class="simblaEL btn" data-drag="P100" id="P100">
+                                    <button type="button" class="simblaEL btn" data-drag="P100" id="P100">
                                         <a href="{% url 'users:edit' %}">EDIT</a>
                                     </button>
                                 </form>
@@ -84,7 +85,7 @@
                             </div>
                             <div class="sDivider col-md-4 index1" data-colsize="4" data-title="Column">
                                 <div class="simblaEL simblaImg" data-drag="P88" id="P88">
-                                    <img draggable="false" class="" src="./Profile_Page_files/28193-1i2tfeb.jpg" alt="" data-id="57179087180c7d216e7e5777" title="">
+                                    <img draggable="false" class="" src="{% static 'image/Photo-David.jpg' %}" alt="" data-id="57179087180c7d216e7e5777" width="350" height="250" title="">
                                 </div>
                                 <div class="simblaEL tcH" data-drag="P89" id="P89">
                                     <div class="textContainer H2" style="cursor: text;">

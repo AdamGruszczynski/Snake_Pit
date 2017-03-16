@@ -1,4 +1,8 @@
-<html>
+{% extends "layout.html" %}
+
+{% block title %}Snake Pit | Survey Results{% endblock title %}
+
+{% block content %}
 <div class="section-color">
     <div class="jumbotron center-block">
         <div class="container">
@@ -9,8 +13,8 @@
 </div>
 
 <div class='content'>
-    <div class='row'>
-        <div class='row col-md-7 col-sm-12 col-xs-12'>
+    <div class='row' >
+        <div class='row col-md-7 col-sm-12 col-xs-12'style="text-align: center" >
             <h3>Description</h3>
             <p>survey_description</p>
             <h3>Questions</h3>
@@ -57,4 +61,4 @@
         </div>
     </div>
 </div>
-</html>
+{% endblock content %}

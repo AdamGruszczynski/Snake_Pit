@@ -1,6 +1,7 @@
 {% extends "layout.html" %}
+{% load static from staticfiles %}
 
-{% block title %}Snake Pit | Taking Survey{% endblock title %}
+{% block title %}Snake Pit | My Surveys{% endblock title %}
 
 {% block content %}
         <div id="windowDiv">
@@ -11,7 +12,7 @@
                         <div class="simblaEL containerHolder" data-drag="P2" id="P2">
                             <div class="container">
                                         <p align="right">
-                                        <button type="submit" class="simblaEL btn btn-lg" data-drag="P97" id="P97">CREATE NEW SURVEY</button>
+                                        <button type="submit" class="simblaEL btn btn-lg" data-drag="P97" id="P97" onclick="location.href='{% url 'surveys:create' %}'">CREATE NEW SURVEY</button>
                                         </p>
                                         <div class="simblaEL tcH" data-drag="P6" id="P6">
                                             <div class="textContainer H2" style="cursor: text;">
@@ -34,7 +35,7 @@
                                             <div class="sDivider col-md-12 index0" data-colsize="12"></div>
                                         </div>
                                         <div class="simblaEL simblaImg" data-drag="P14" id="P14" style="">
-                                            <img draggable="false" class="" alt="checked_318-140685.jpg" data-id="" title="checked_318-140685.jpg" data-border-type="All" style="border-radius: 150px;" width="100" src="./SubmitSurvey_files/24630-1omay4x.jpg">
+                                            <img draggable="false" class="" alt="checked_318-140685.jpg" data-id="" title="checked_318-140685.jpg" data-border-type="All" style="border-radius: 150px;" width="100" src="{% static 'image/24630-1omay4x.jpg' %}">
                                         </div>
                                     </div>
                                     <div class="sDivider col-md-9 index1" data-colsize="9">
@@ -54,8 +55,12 @@
                                                 </div>
                                                 <div class="simblaEL tc" data-drag="P20" id="P20">
                                                     <div class="textContainer" style="cursor: text;">
-                                                        <p>MySurvey_5 - Time Left: (Countdown)</p>
-                                                        <p>MySurvey_6 - Time Left: (Countdown)</p>
+                                                        <p>
+                                                            <a href="{% url 'surveys:results' %}">MySurvey_5 - Time Left: (Countdown)</a>
+                                                        </p>
+                                                        <p>
+                                                            <a href="{% url 'surveys:results' %}">MySurvey_6 - Time Left: (Countdown)</a>
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -69,7 +74,7 @@
                                             <div class="sDivider col-md-12 index0" data-colsize="12"></div>
                                         </div>
                                         <div class="simblaEL simblaImg" data-drag="P36" id="P36" style="">
-                                            <img draggable="false" class="" alt="question-mark_318-52837.jpg" data-id="" title="question-mark_318-52837.jpg" data-border-type="All" style="border-radius: 150px;" width="100" src="./SubmitSurvey_files/24630-zqxosm.jpg">
+                                            <img draggable="false" class="" alt="question-mark_318-52837.jpg" data-id="" title="question-mark_318-52837.jpg" data-border-type="All" style="border-radius: 150px;" width="100" src="{% static 'image/24630-zqxosm.jpg' %}">
                                         </div>
                                     </div>
                                     <div class="sDivider col-md-9 index1" data-colsize="9">
@@ -87,8 +92,12 @@
                                                 </div>
                                                 <div class="simblaEL tc" data-drag="P42" id="P42">
                                                     <div class="textContainer" style="cursor: text;">
-                                                        <p>MySurvey_7 - Status: Incomplete</p>
-                                                        <p>MySurvey_8 - Status: Incomplete</p>
+                                                        <p>
+                                                            <a href="{% url 'surveys:create' %}">MySurvey_7 - Status: Incomplete</a>
+                                                        </p>
+                                                        <p>
+                                                            <a href="{% url 'surveys:create' %}">MySurvey_8 - Status: Incomplete</a>
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -102,7 +111,7 @@
                                             <div class="sDivider col-md-12 index0" data-colsize="12"></div>
                                         </div>
                                         <div class="simblaEL simblaImg" data-drag="P98" id="P98">
-                                            <img draggable="false" class="" alt="" data-id="" title="" src="./SubmitSurvey_files/24630-33hmp3.jpg" width="100">
+                                            <img draggable="false" class="" alt="" data-id="" title="" src="{% static 'image/24630-33hmp3.jpg' %}" width="100">
                                         </div>
                                     </div>
                                     <div class="sDivider col-md-9 index1" data-colsize="9">
@@ -120,8 +129,12 @@
                                                 </div>
                                                 <div class="simblaEL tc" data-drag="P64" id="P64">
                                                     <div class="textContainer" style="cursor: text;">
-                                                        <p>MySurvey_1 - Completed: (Date&amp;Time)</p>
-                                                        <p>MySurvey_2 - Completed: (Date&amp;Time)</p>
+                                                        <p>
+                                                            <a href="{% url 'surveys:results' %}">MySurvey_1 - Completed: (Date&amp;Time)</a>
+                                                        </p>
+                                                        <p>
+                                                            <a href="{% url 'surveys:results' %}">MySurvey_2 - Completed: (Date&amp;Time)</a>
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>

@@ -18,12 +18,14 @@ from django.conf.urls import url
 from . import views
 
 urlpatterns = [
- 	
+
  	url(r'^createSurvey/', views.create_survey_page, name='create'),
+
+ 	url(r'^mySurveys/results', views.survey_results_page, name='results'),
 
  	url(r'^mySurveys/', views.my_survey_page, name='myList'),
 
- 	url(r'^/take', views.take_survey_page, name='take'),
+ 	url(r'^take/', views.take_survey_page, name='take'),
  	
     url(r'^surveyList/', views.find_survey_page, name='find'),
     

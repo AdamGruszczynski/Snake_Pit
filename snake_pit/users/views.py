@@ -6,3 +6,6 @@ def profile_page(request):
 
 def profile_edit_page(request):
 	return render(request, 'Edit_Create_Profile.html')
+
+def login_register_page(request):
+	return render(request, 'register.html')

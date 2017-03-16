@@ -3,41 +3,93 @@
 
 <head>
 	<title>{% block title %}{% endblock title %}</title>
-	<link rel="stylesheet" href="{% static 'css/layout.css' %}">
-
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/bootstrap3.min.css' %}">
+    <script type="text/javascript" async="" src="{% static 'js/recaptcha__en.js'%}"></script>
+    <script src="{% static 'js/jquery-1.12.4.min.js' %}" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-	<body
-        <div >
-            <div >
-            <!-- Banner -->
-            <section >
+
+	<body data-spy="scroll" data-target=".navbar-collapse" class="static-page">
+<div id="header-wrapper">
+    <div id="header">
+        <!-- Banner -->
+        <section id="banner">
             <header>
-            	<h2>
-                	<a href="{% url 'views.home_page' %}">Snake Pit</a>
-                </h2>
+                <h1>Snake Pit</h1>
             </header>
-            </section>
+        </section>
 
 
-            <!-- Nav -->
-            <nav >
-            <ul>
-                <li><a href="{% url 'views.about_us' %}">About Us</a></li><li>
-                </li><li><a href="{% url 'views.help_page' %}">Help</a></li><li>
-                </li><li><a href="{% url 'surveys:create' %}">Create Survey</a> </li><li>
-                </li><li><a href="{% url 'surveys:find' %}">Find Survey</a> </li><li>
-            <form >
-                <input type="text" name="search" placeholder="Search.." class="inputSearch">
-            </form>
-            </li><li style="float:right"><a href="#">SignIn/Out</a></li>
-            <li style="float:right"><a href="{% url 'users:profile' %}">Hello User! </a></li>
-            <li style="float:right"><a href="{% url 'surveys:myList' %}">My Surveys </a></li>
-
-
-            </ul>
-            </nav>
+        <!-- Nav -->
+        <nav class="navbar navbar-default" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{% url 'views.home_page' %}"style="color:white">Home</a>
             </div>
-        </div>
-    	{% block content %}{% endblock content %}
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="{% url 'views.about_us' %}" style="color:white"> About Us</a></li>
+                    <li><a href="{% url 'views.help_page' %}" style="color:white">Help</a></li>
+                    <li><a href="{% url 'surveys:find' %}" style="color:white">Take a Survey</a></li>
+                </ul>
+
+                <!-- search bar -->
+                <div class="col-sm-3 col-md-3">
+                    <form class="navbar-form" role="search">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search" name="q">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
+                            <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                                <div class="modal-dialog">
+                                    <div class="loginmodal-container">
+                                        <h1>Login to Your Account</h1><br>
+                                        <form>
+                                            <input type="text" name="user" placeholder="Username">
+                                            <input type="password" name="pass" placeholder="Password">
+                                            <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+                                        </form>
+
+                                        <div class="login-help">
+                                            <a href="{% url 'users:register' %}">Register</a> - <a href="#">Forgot Password</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color: white">User Menu <span class="caret" ></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{% url 'users:profile' %}">Profile</a></li>
+                            <li><a href="{% url 'surveys:myList' %}">My Surveys</a></li>
+                            <li><a href="{% url 'surveys:create' %}">Create Survey</a></li>
+                            <li role="separator" class="divider"></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div><!-- /.navbar-collapse -->
+        </nav>
+    </div>
+</div>
+{% block content %}{% endblock content %}
   	</body>
 </html>

@@ -12,3 +12,6 @@ def my_survey_page(request):
 
 def create_survey_page(request):
 	return render(request, 'Create_Survey.html')
+
+def survey_results_page(request):
+	return render(request, 'Survey_Result.html')
